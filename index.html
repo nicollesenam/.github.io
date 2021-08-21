@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meu Portifólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+
+</head>
+<body>
+    <div id = "navbar" class = "nav">
+        <nav class="nav_menu">
+            <ul class="nav_list">
+                <li class = "nav_item"><a href ="#main-container" class = "nav_link">Home</a></li>
+                <li class = "nav_item"><a href ="#main-container" class = "nav_link">Sobre</a></li>
+                <li class = "nav_item"><a href ="#imagens" class = "nav_link">Projetos</a></li>
+                <li class = "nav_item"><a href ="#contact" class = "nav_link">Contato</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <div id = "main-container" >
+        <h1>Oi, eu sou a Nicolle (:</h1>
+        <p>e esse é o meu portifólio.</p>
+        <div class ="img">
+            <a href = "img/teste1.png" ></a>
+        </div>
+
+    </div>
+
+    <div class = "social media">
+        <a href="#"></a> 
+        <a href="https://www.linkedin.com/in/nicollesenam/"><ion-icon name="logo-linkedin" class = "linkedin"></ion-icon> </a>
+        <a href="https://github.com/nicollesenam"><ion-icon name="logo-github" class = "github"></ion-icon> </a>
+        <a href="https://www.instagram.com/nicollesm_/"><ion-icon name="logo-instagram" class = "instagram"></ion-icon> </a> 
+
+    </div>
+
+    <div class = "sobre">
+        <h1>Sobre Mim</h1>
+            <div id = "presentation">
+                <article>Meu nome é Nicolle Sena, tenho 19 anos e atualmente estou cursando o quarto período de Análise e Desenvolvimento de Sistemas. Como futura desenvolvedora front-end, aqui estão os meus projetos mais recentes durante essa jornada de aprendizado enquanto desenvolvo minha carreira. Acompanha aí!.</article>
+            </div>
+    </div>
+
+    <div class = "projetos">
+        <h1>Projetos</h1>
+            <div id = "imagens">
+                <div id =  "title-todolist">
+                    <table>
+                        <tr>
+                            <h3>To do List</h3>
+                            <td id = "todoList"><img src="img/to do list projeto.png"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="title-formularioProjeto">
+                    <table>
+                        <tr>
+                            <h3>Formulário Cadastro de Dev</h3>
+                            <td id = "formularioProjeto"><img src="img/formulario projeto.png"></td>
+                        </tr>
+                    </table>
+                </div> 
+                <div id = "title-formularioProjeto2">
+                    <table>
+                        <tr>
+                            <h3>Formulário Cadastro de Sistema</h3>
+                            <td id = "formularioProjeto2"><img src="img/formulario2 projeto.png"></td>
+
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+    </div>
+
+    <div class = "contato">
+        <h1>Contato</h1>
+            <div id="contact">
+                <div class = "form">
+                    <form action= "https://formspree.io/f/xrgrooay" method="post" id = "formulario-contato"> 
+                        <div class = campo>
+                            <label for = "name">Nome:</label>
+                            <input type = "text" id = "name" name = "name" placeholder="Digite seu nome" minlength="3" ></input> 
+                        </div>
+                        <div class="campo">
+                            <label for = "email">E-mail:</label>
+                            <input type = "email" id = "email" name = "email" placeholder="Digite seu e-mail" maxlength="50" ></input> 
+                        </div>
+                        <div class = "campo">
+                            <label for = "msg">Mensagem:</label>
+                            <textarea id="msg" name = "msg" placeholder="Escreva uma mensagem..."></textarea>
+                        </div>
+                        <div class = "btn">
+                            <span class = "btn-submit1">
+                                <button id = "btn-submit2" type = "submit">Enviar</button>
+                            </span>
+                        </div>
+
+                    </form>   
+                </div>
+            </div>
+    </div>
+
+    <footer class = "footer">
+
+    </footer>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #5a5a63;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background-color: #412850;
+}
+
+ul li{
+    display: inline;
+
+}
+.nav_menu ul li a{ 
+    margin-right: 50px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: #202225;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 1.5px solid #412850;
+    
+
+}
+
+
+.nav_menu ul li a:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    border-bottom: 1.5px solid #fff;
+}
+
+
+#main-container{
+    color:#ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    margin-right: 40px;
+    background-image: url('img/teste1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 280px;
+
+}
+
+img{
+    display: block;
+    width: 50px;
+    height: 50px;
+
+}
+ion-icon{
+    height: 35px;
+    width: 35px;
+    color:#ffff;
+    margin-right: 40px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: width 5px;
+
+}
+
+ion-icon:hover{
+    box-shadow: 0px 4px 1px #412850; 
+    border-radius: 3px;
+    transition: 0.5s;
+    transition: width 5px;  
+}
+
+ion-icon.linkedin{
+    margin-left: 300px;
+    
+}
+ion-icon.github{
+    margin-left: 10px;
+}
+ion-icon.instagram{
+    margin-left: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+h1{
+    font-size: 40px;
+    letter-spacing: 4px;
+    margin-bottom: 2px;
+    display: block;
+    color: #ffff;
+}
+p{
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #202225;
+}
+
+.sobre h1, .projetos h1, .contato h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 1px #202225;
+    font-size: 20px;
+}
+
+table{
+    width: 60%;
+    height: 100%;
+    margin-left: 370px;
+    margin-right: 200px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 2%;
+}
+
+table #todoList img{
+    width: 75%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.projetos h3{
+    margin-left: 370px;
+    margin-right: 200px;
+    margin-bottom: 5px;
+    color: #ffff;
+    text-shadow: 1px 1px 1px #202225;
+
+}
+
+
+
+.projetos h3:hover{
+    box-shadow: 0px 4px 1px #412850; 
+    border-radius: 4px;
+    transition: 0.5s;
+    transition: width 3px;  
+    text-shadow: 3px 3px 3px #202225;
+}
+
+#title-todolist h3{
+    width: 90px;
+}
+
+#title-formularioProjeto h3{
+    width: 270px;
+}
+
+#title-formularioProjeto2 h3{
+    width: 310px;
+}
+
+table #formularioProjeto img{
+    width: 75%;
+    height: 100%;
+    border-radius: 5px;
+}
+table #formularioProjeto2 img{
+    width: 75%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+
+
+
+#contact {
+    display: block;
+    color: #ffff;
+    justify-content: center;
+
+}
+.campo{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.campo label{
+    float: left;
+    width: 40%;
+    text-align: right;
+    padding-right: 10px;
+    margin: -1.5px 0px -1.5px 0px;
+    font-size: 20px;
+    font-family: 'Poppins';
+    text-shadow: 1px 1px 1px #202225;
+    font-size: 15px;
+
+}
+.campo input{
+    width: 30%;
+    margin: 0px;
+    padding-left: 5px;
+    font-family: 'Poppins';
+}
+
+.campo textarea{
+    width: 50%;
+    height: 10em;
+    font-family: 'Poppins';
+}
+
+input, label, textarea{
+    border-radius: 3px;
+    border: none;
+    
+}
+
+.campo input[type = "text"], .campo input[type = "email"], .campo textarea{
+    border: 2px solid #412850;
+    box-shadow: 1.5px 1.5px 1.5px #202225;
+
+}
+
+
+
+#btn-submit2{
+    border: 0;
+    cursor: pointer;
+    color: #ffff;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #202225;
+    background-color:#412850;
+    border-radius: 3px;
+    text-decoration: none;
+    border-bottom:0.5px solid #ffff;
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    margin-left: 47em;
+
+}
+#btn-submit2:hover{
+    transition: 0.5s;
+    background-color: #36393F;
+    cursor: pointer;
+}
+
+.errorInput{
+    border: 1.5px solid red !important;
+}
+
+input:focus, label:focus, textarea:focus{
+    outline: none;
+}
+
+
+
+#presentation{
+    
+    width: 45%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1px;
+    padding-top: 10px;
+    padding-bottom: 1%;
+   
+}
+
+#presentation article{
+    color: #ffff;
+    text-align: justify;
+    text-shadow: 1px 1px 1px #202225;
+
+}
+
+#projects{
+    background-color: black;
+    width: 60%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10%;
+   
+}
+#contact{
+    width: 60%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10%;
+   
+}
+
+
+#main-container h1{
+    text-shadow:4px 2px #412850;
+}
+
+h2{
+    font-size: 50px;
+    letter-spacing: 4px;
+    display: block;
+
+}
+
+.social-media{
+    margin-top: 1rem;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+}
