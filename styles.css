@@ -316,7 +316,6 @@ input:focus, label:focus, textarea:focus{
 }
 
 #projects{
-    background-color: black;
     width: 60%;
     height: 100%;
     margin-left: auto;
