@@ -5,117 +5,222 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Meu Portifólio</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- fontes -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <link rel="stylesheet" href="fontes/NotoSans-Bold.ttf">
+    <link rel="stylesheet" href="fontes/NotoSans-BoldItalic.ttf">
+    <link rel="stylesheet" href="fontes/NotoSans-Italic.ttf">
+    <link rel="stylesheet" href="fontes/NotoSans-Regular.ttf">
+    <link rel="stylesheet" type="text/css" href = "bootstrap\css\bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 <body>
-    <div id = "navbar" class = "nav">
-        <nav class="nav_menu">
-            <ul class="nav_list">
-                <li class = "nav_item"><a href ="#main-container" class = "nav_link">Home</a></li>
-                <li class = "nav_item"><a href ="#main-container" class = "nav_link">Sobre</a></li>
-                <li class = "nav_item"><a href ="#imagens" class = "nav_link">Projetos</a></li>
-                <li class = "nav_item"><a href ="#contact" class = "nav_link">Contato</a></li>
-
-            </ul>
-        </nav>
-    </div>
-
-    <div id = "main-container" >
-        <h1>Oi, eu sou a Nicolle (:</h1>
-        <p>e esse é o meu portifólio.</p>
-        <div class ="img">
-            <a href = "img/teste1.png" ></a>
+    <div id = "main-container">
+        <div id = "navbar" class = "nav">
+            <nav class="nav_menu navbar navbar-expand-lg">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav_list navbar-nav">
+                        <li class = "nav_item"><a href ="index.html" class = "nav_link">Home</a></li>
+                        <li class = "nav_item"><a href ="#content" class = "nav_link">Sobre</a></li>
+                        <li class = "nav_item"><a href ="#carouselSite" class = "nav_link">Projetos</a></li>
+                        <li class = "nav_item"><a href ="#contact" class = "nav_link">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
 
-    </div>
+        <div id = "content">
+            <div class="box-left">
+                <div class="text-top container">
+                    <div class="row justify-content-center">
+                        <div class="text-top col-lg-6">
+                            <h1>Oi, eu sou a Nicolle! :)</h1>
+                            <p>Estudante de Desenvolvimento Web</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-right">
+                <div class ="img container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 img">
+                            <img src="img/imagem menor.png" width="300" >
+                        </div>
+                    </div>
+                </div>
+                <div class = "social-media">
+                    <p style="text-align: center;">
+                        <a href="https://www.linkedin.com/in/nicollesenam/"><ion-icon name="logo-linkedin" class = "linkedin"></ion-icon> </a>
+                        <a href="https://github.com/nicollesenam"><ion-icon name="logo-github" class = "github"></ion-icon> </a>
+                        <a href="https://www.instagram.com/nicollesm_/"><ion-icon name="logo-instagram" class = "instagram"></ion-icon> </a> 
+                    </p>
+                </div>
+            </div>
+        </div>
 
-    <div class = "social media">
-        <a href="#"></a> 
-        <a href="https://www.linkedin.com/in/nicollesenam/"><ion-icon name="logo-linkedin" class = "linkedin"></ion-icon> </a>
-        <a href="https://github.com/nicollesenam"><ion-icon name="logo-github" class = "github"></ion-icon> </a>
-        <a href="https://www.instagram.com/nicollesm_/"><ion-icon name="logo-instagram" class = "instagram"></ion-icon> </a> 
-
-    </div>
-
-    <div class = "sobre">
-        <h1>Sobre Mim</h1>
+        
+        <div class="about">
+            <div class = "sobre">
+                <h1>Sobre Mim</h1>       
+            </div>
             <div id = "presentation">
-                <article>Meu nome é Nicolle Sena, tenho 19 anos e atualmente estou cursando o quarto período de Análise e Desenvolvimento de Sistemas. Como futura desenvolvedora front-end, aqui estão os meus projetos mais recentes durante essa jornada de aprendizado enquanto desenvolvo minha carreira. Acompanha aí!</article>
+                <article>Tenho 19 anos e atualmente estou cursando o quinto período de Análise e Desenvolvimento de Sistemas. Como futura desenvolvedora front-end, aqui estão os meus projetos mais recentes durante essa jornada de aprendizado enquanto desenvolvo minha carreira. Acompanha aí!</article>
             </div>
-    </div>
 
-    <div class = "projetos">
-        <h1>Projetos</h1>
-            <div id = "imagens">
-                <div id =  "title-todolist">
-                    <table>
-                        <tr>
-                            <h3>To do List</h3>
-                            <td id = "todoList"><img src="img/to do list projeto.png"></td>
-                        </tr>
-                    </table>
-                </div>
-                <div id="title-formularioProjeto">
-                    <table>
-                        <tr>
-                            <h3>Formulário Cadastro de Dev</h3>
-                            <td id = "formularioProjeto"><img src="img/formulario projeto.png"></td>
-                        </tr>
-                    </table>
-                </div> 
-                <div id = "title-formularioProjeto2">
-                    <table>
-                        <tr>
-                            <h3>Formulário Cadastro de Sistema</h3>
-                            <td id = "formularioProjeto2"><img src="img/formulario2 projeto.png"></td>
+        </div>
 
-                        </tr>
-                    </table>
-                </div>
 
-            </div>
-    </div>
 
-    <div class = "contato">
-        <h1>Contato</h1>
-            <div id="contact">
-                <div class = "form">
-                    <form action= "https://formspree.io/f/xrgrooay" method="post" id = "formulario-contato"> 
-                        <div class = campo>
-                            <label for = "name">Nome:</label>
-                            <input type = "text" id = "name" name = "name" placeholder="Digite seu nome" minlength="3" ></input> 
-                        </div>
-                        <div class="campo">
-                            <label for = "email">E-mail:</label>
-                            <input type = "email" id = "email" name = "email" placeholder="Digite seu e-mail" maxlength="50" ></input> 
-                        </div>
-                        <div class = "campo">
-                            <label for = "msg">Mensagem:</label>
-                            <textarea id="msg" name = "msg" placeholder="Escreva uma mensagem..."></textarea>
-                        </div>
-                        <div class = "btn">
-                            <span class = "btn-submit1">
-                                <button id = "btn-submit2" type = "submit">Enviar</button>
-                            </span>
-                        </div>
-
-                    </form>   
+        <div class="wrapper">
+            <div class="container-wrapper">
+                <h2>Habilidades</h2>
+                <div class="skills">
+                    <div class="details">
+                      <span>HTML</span>
+                      <span>70%</span>
+                    </div>
+                    <div class="bar">
+                       <div id="html-bar"></div>
+                    </div>
+                    <div class="details">
+                        <span>CSS</span>
+                        <span>78%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="css-bar"></div>
+                    </div>
+                    <div class="details">
+                        <span>Bootstrap</span>
+                        <span>20%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="bootstrap-bar"></div>
+                    </div>
+                    <div class="details">
+                        <span>JavaScript</span>
+                        <span>30%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="javascript-bar"></div>
+                    </div>
                 </div>
             </div>
+
+
+        </div>
+        
+
+        <div class="projetos-title">
+            <h1>Projetos</h1>
+        </div>
+        <div class = "projetos">
+                <div id="carouselSite" class="carousel slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselSite" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+                        <li data-bs-target="#carouselSite" data-bs-slide-to="1" aria-label="Slide 2"></li>
+                        <li data-bs-target="#carouselSite" data-bs-slide-to="2" aria-label="Slide 3"></li>
+                        <li data-bs-target="#carouselSite" data-bs-slide-to="3" aria-label="Slide 4"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <div class="overlay-image">
+                                <img src="img/to do list projeto.png" class="img fluid d block d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>To Do List</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="overlay-image">
+                                <img src="img/formulario projeto.png" class="img fluid d block d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Formulário Cadastro de Dev</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="overlay-image">
+                                <img src="img/formulario2 projeto.png" class="img fluid d block d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Formulário Cadastro de Sistema</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="overlay-image">
+                                <img src="https://user-images.githubusercontent.com/82225853/146969003-24d3c956-71e6-4599-8f74-6d0dd7900106.gif" class="img fluid d block d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Tela de Cadastro e Login</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselSite" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselSite" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+        </div>
+
+        <div id="contact">
+            <div class="wrapper">
+                <div class="container-wrapper">
+                    <div class = "contato">
+                        <h1>Contato</h1>
+                    </div>
+                        <div class = "form">
+                            <form action= "https://formspree.io/f/xrgrooay" method="post" id = "formulario-contato"> 
+                                <div class = campo>
+                                    <label for = "name">Nome</label>
+                                    <input type = "text" id = "name" name = "name" placeholder="Digite seu nome" minlength="3" ></input> 
+                                </div>
+                                <div class="campo">
+                                    <label for = "email">E-mail</label>
+                                    <input type = "email" id = "email" name = "email" placeholder="Digite seu e-mail" maxlength="50" ></input> 
+                                </div>
+                                <div class = "campo">
+                                    <label for = "msg">Mensagem</label>
+                                    <input type = "text" textarea id="msg" name = "msg" placeholder="Escreva uma mensagem..."></textarea>
+                                </div>
+                                <div class = "btn">
+                                    <span class = "btn-submit1 text-box">
+                                        <button id = "btn-submit2" class="btn btn-white btn-animate" type = "submit">Enviar</button>
+                                    </span>
+                                </div>
+
+                            </form>   
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-footer">
+            <footer class="py-3 my-4">
+              <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="#content" class="nav-link px-2 text-muted">Sobre</a></li>
+                <li class="nav-item"><a href="#carouselSite" class="nav-link px-2 text-muted">Projetos</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link px-2 text-muted">Contato</a></li>
+              </ul>
+              <p class="text-center text-muted">&copy; 2021 - 2022</p>
+            </footer>
+        </div>
     </div>
 
-    <footer class = "footer">
-
-    </footer>
 
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
