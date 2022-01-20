@@ -462,10 +462,22 @@ a{
 
 
 
+<<<<<<< HEAD
 .container-footer{
     background-color: #181818b7;
     width: 100%;
     flex: 1 0 auto;
+=======
+#projects{
+    width: 60%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10%;
+   
+>>>>>>> 37fb1ef46ef6f9ebf0e8062cbe481060f4341db6
 }
 
 .container-footer ul li :hover{
