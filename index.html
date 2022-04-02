@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Meu Portifólio</title>
-
+    <link rel="stylesheet" media="(max-width: 800px)" href="styles.css" />
+    <link rel="stylesheet" media="screen and (min-width: 900px)">
+    <link rel="stylesheet" media="screen and (max-width: 600px)">
+    <title>Portifólio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
@@ -15,6 +17,7 @@
     <link rel="stylesheet" href="fontes/NotoSans-Regular.ttf">
     <link rel="stylesheet" type="text/css" href = "bootstrap\css\bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/icon shortcut3.png">
 
 </head>
 <body>
@@ -67,7 +70,7 @@
                 <h1>Sobre Mim</h1>       
             </div>
             <div id = "presentation">
-                <article>Tenho 19 anos e atualmente estou cursando o quinto período de Análise e Desenvolvimento de Sistemas. Como futura desenvolvedora front-end, aqui estão os meus projetos mais recentes durante essa jornada de aprendizado enquanto desenvolvo minha carreira. Acompanha aí!</article>
+                <article>Tenho 20 anos e atualmente estou cursando o quinto período de Análise e Desenvolvimento de Sistemas. Como futura desenvolvedora front-end, aqui estão os meus projetos mais recentes durante essa jornada de aprendizado enquanto desenvolvo minha carreira. Acompanha aí!</article>
             </div>
 
         </div>
@@ -123,6 +126,9 @@
                         <li data-bs-target="#carouselSite" data-bs-slide-to="1" aria-label="Slide 2"></li>
                         <li data-bs-target="#carouselSite" data-bs-slide-to="2" aria-label="Slide 3"></li>
                         <li data-bs-target="#carouselSite" data-bs-slide-to="3" aria-label="Slide 4"></li>
+                        <li data-bs-target="#carouselSite" data-bs-slide-to="4" aria-label="Slide 5"></li>
+                        <li data-bs-target="#carouselSite" data-bs-slide-to="5" aria-label="Slide 6"></li>
+                        <li data-bs-target="#carouselSite" data-bs-slide-to="6" aria-label="Slide 7"></li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="10000">
@@ -151,10 +157,34 @@
                         </div>
                         <div class="carousel-item">
                             <div class="overlay-image">
-                                <img src="https://user-images.githubusercontent.com/82225853/146969003-24d3c956-71e6-4599-8f74-6d0dd7900106.gif" class="img fluid d block d-block w-100" alt="...">
+                                <img src="https://user-images.githubusercontent.com/82225853/146969003-24d3c956-71e6-4599-8f74-6d0dd7900106.gif" width = "900" heigth = "391" class="img fluid d block d-block" alt="...">
                             </div>
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Tela de Cadastro e Login</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="overlay-image">
+                                <img src="https://user-images.githubusercontent.com/82225853/151831861-711a673f-fb90-4c4d-82e4-412b17a46e26.gif" class="img fluid d block d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Ligth Mode e Dark Mode</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="overlay-image">
+                                <img src="https://user-images.githubusercontent.com/82225853/157103099-b2e5d74e-0d78-44fa-9060-d005bfcf50cf.gif" class="img fluid d block d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Calculadora</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="overlay-image">
+                                <img src="https://user-images.githubusercontent.com/82225853/156380749-d30de6f5-8c2f-4157-92f1-e00a5c6ecffd.gif" class="img fluid d block d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Ifood Counter</h5>
                             </div>
                         </div>
                     </div>
@@ -170,37 +200,21 @@
 
         </div>
 
-        <div id="contact">
-            <div class="wrapper">
-                <div class="container-wrapper">
-                    <div class = "contato">
-                        <h1>Contato</h1>
+        <div class="content-experiences">
+            <div class="box-experiences">
+                <div class="intern-box-experiences">
+                    <div class="logo-experiences">
+                        <img src="./img/icon shortcut3.png" width = "60px" height = "60px" alt="" srcset="">
+                        <p>nicollesenam@gmail.com</p>
                     </div>
-                        <div class = "form">
-                            <form action= "https://formspree.io/f/xrgrooay" method="post" id = "formulario-contato"> 
-                                <div class = campo>
-                                    <label for = "name">Nome</label>
-                                    <input type = "text" id = "name" name = "name" placeholder="Digite seu nome" minlength="3" ></input> 
-                                </div>
-                                <div class="campo">
-                                    <label for = "email">E-mail</label>
-                                    <input type = "email" id = "email" name = "email" placeholder="Digite seu e-mail" maxlength="50" ></input> 
-                                </div>
-                                <div class = "campo">
-                                    <label for = "msg">Mensagem</label>
-                                    <input type = "text" textarea id="msg" name = "msg" placeholder="Escreva uma mensagem..."></textarea>
-                                </div>
-                                <div class = "btn">
-                                    <span class = "btn-submit1 text-box">
-                                        <button id = "btn-submit2" class="btn btn-white btn-animate" type = "submit">Enviar</button>
-                                    </span>
-                                </div>
-
-                            </form>   
-                        </div>
+                    <div class="resume-download-experiences">
+                        <h1>Quer saber mais sobre mim?</h1>
+                        <p><a href="./Nicolle Sena de Mendonça - Currículo 2022 DEV FRONT END OCULTO.pdf" download>Baixe meu Currículo!</a></p>
+                    </div>
                 </div>
             </div>
         </div>
+
 
         <div class="container-footer">
             <footer class="py-3 my-4">
