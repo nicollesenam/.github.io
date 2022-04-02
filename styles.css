@@ -356,7 +356,7 @@ ion-icon:hover{
     
 }
 
-.content-experiences{
+#content-experiences{
     display: flex;
     flex-direction: row;
     margin: 0;
