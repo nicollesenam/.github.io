@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body{
-    margin: 0;
-    padding: 0;
+    margin:0 !important;
+    padding:0 !important;
     font-family: "Poppins" !important;
     background-color: #121212 !important; /*dark grey*/
     padding-bottom: 100px;
@@ -14,11 +14,30 @@ body{
 
 html{
     scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+        box-sizing: border-box;
 }
+
+@media screen and (max-width: 600px){
+    html{
+        padding-right: 0 !important;
+        padding: 0 !important;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        min-width: 590px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+}
+
 /* alterar cor de seleção do texto */
 *::-moz-selection {
     background:#50409a;
@@ -65,6 +84,38 @@ ul li{
 
 }
 
+@media screen and (max-width: 600px) and (max-width: 990px){
+
+    #navbar{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav_list{
+        display: inline;
+        flex-direction: row;
+    }
+
+}
+
+@media screen and (max-width: 990px){
+
+    #navbar{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav_list{
+        display: inline;
+        flex-direction: row;
+    }
+
+}
+
 html::-webkit-scrollbar-track
  {
      border-radius: 10px;
@@ -82,12 +133,7 @@ html::-webkit-scrollbar-thumb
      background-color: #50409a; /*cor da barrinha scrollbar*/
  }
 
-@media screen and (max-width: 1003px){
-    body{
-        background-color: blue;
-    }
-    
-}
+
 
 
 #content{
@@ -96,6 +142,45 @@ html::-webkit-scrollbar-thumb
     margin: 0;
     justify-content: center;
     background-color: #181818b7;
+}
+
+@media screen and (max-width: 600px) and (max-width: 990px){
+
+    #content{
+       width: 100%;
+       height: 10%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       text-align: center;
+    }
+
+    .box-left{
+        vertical-align: middle;
+        margin-top: 50px;
+
+    }
+
+    .box-left .text-top{
+        flex: auto;
+        margin: auto;
+        justify-content: center;
+    }
+    
+    
+    .text-top p{
+       margin-left: 20px !important;
+    }
+
+    #content .box-left{
+        justify-content: center;
+    }
+    
+    #content .box-right{
+        padding-top: 0 !important;
+        margin: 0;
+    }
+    
 }
 
 .box-left, .box-right{
@@ -167,8 +252,18 @@ ion-icon:hover{
 
 
 .box-right .img{
+    width: 300px;
+    height: 200px;
+}
 
-    width: 100%;
+
+@media screen and (max-width: 600px) and (max-width: 990px){
+    .wrapper{
+        width: 50%;
+        min-width: 536px !important;
+        margin: 0 auto;
+    
+    }
 }
 
 .wrapper{
@@ -270,6 +365,63 @@ ion-icon:hover{
     }
 }
 
+#angular-bar{
+    animation: angular-fill 2s forwards;
+}
+@keyframes angular-fill{
+    100%{
+        width: 30%;
+    }
+}
+
+#typescript-bar{
+    animation: typescript-fill 2s forwards;
+}
+@keyframes typescript-fill{
+    100%{
+        width: 30%;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    
+    .about{
+        margin: 0 auto;
+        width: 100% !important; 
+    }
+
+    .about h1{
+        margin-bottom: 15px !important ;
+        margin-top: 25px !important ;
+    }
+
+    #presentation article{
+      padding: 30px 30px 50px;
+    }
+
+}
+
+@media screen and (max-width: 990px){
+    
+    .about{
+        margin: 0 auto;
+        width: 100% !important; 
+    }
+
+    .about h1{
+        margin-bottom: 15px !important ;
+        margin-top: 25px !important ;
+    }
+
+    #presentation article{
+      padding: 30px 30px 50px;
+    }
+
+}
+
+
+
 .about{
     margin: 0 auto;
     width: 50%;
@@ -320,10 +472,28 @@ ion-icon:hover{
 }
 
 
+@media screen and (max-width: 600px) and (max-width: 990px){
+    .projetos{
+        width: 50%;
+        min-width: 536px !important;
+        margin: 0 auto;
+     
+    }
+}
+
+@media screen and (max-width: 990px){
+    .projetos{
+        width: 50%;
+        min-width: 536px !important;
+        margin: 0 auto;
+    }
+}
+
 .projetos{
+    width: 50%;
+    min-width: 536px;
     margin: 0 auto;
     margin-bottom: 30px;
-    width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: center;
